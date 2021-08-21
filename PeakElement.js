@@ -1,11 +1,11 @@
 //Find peak element in array
-//peak element = element which is ngretaer with its neighbours
+//peak element = element which is greater with its neighbours
 
-//ex---45 is greater its left and righxt elements;
+//ex---45 is greater its left and right elements;
 
-//extream left and extreme right also be a peak element is its lefty and right will eb less than.
+//extreme left and extreme right also be a peak element if its left and right will be less than.
 
-//ex--20 is also a peak element 
+//ex--20 is also a peak element because it's greater its left element
 
 
 // logic of o(logn) using binary search concept
