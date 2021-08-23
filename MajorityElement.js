@@ -7,16 +7,7 @@
 //Then verify for isMajority or not
 
 
-/Logic 
-//1.Check solution exist |
-	//counter>0        |
-		
-//if(candidate===element	counter++
-  // else
-  // counter--
-//if counter===0  update candidate =>element
-   
-//2.   then check for if that candidate is majority or not with complete traversal count>n/2
+
 
 
 let arr = [2,3,4,3,3]
@@ -64,3 +55,55 @@ let count =0;
   return false;
   }
 }
+
+
+
+
+//-------------------------------------*********************************------------------------
+/Logic 
+//1.Check solution exist |
+	//counter>0        |
+		
+//if(candidate===element	counter++
+  // else
+  // counter--
+//if counter===0  update candidate =>element
+   
+//2.   then check for if that candidate is majority or not with complete traversal count>n/2
+
+let a = [3, 3, 4, 2, 4, 2]
+let cand = findMajority
+
+console.log(checkForMajority());
+
+
+function findMajority(){
+let counter = 0;
+let candidate = a[0];
+	for(let i=0;i<a.length-1;i++){
+   console.log(candidate,a[i],counter)
+    if(counter===0){
+ 		 candidate = a[i];
+  }
+  if(a[i]===candidate){
+  	counter++;
+  }else{
+  	counter--;
+  }
+  }
+ 
+  return candidate;
+}
+
+function checkForMajority(){
+let count= 0;
+	for(let i=0;i<a.length;i++){
+  if(a[i]===cand)
+  count++;
+  }
+  if(count>a.length/2)
+ 	console.log("majority element==",cand)
+  else
+  console.log("no majpority element");
+}
+
