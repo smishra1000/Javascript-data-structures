@@ -7,6 +7,18 @@
 //Then verify for isMajority or not
 
 
+/Logic 
+//1.Check solution exist |
+	//counter>0        |
+		
+//if(candidate===element	counter++
+  // else
+  // counter--
+//if counter===0  update candidate =>element
+   
+//2.   then check for if that candidate is majority or not with complete traversal count>n/2
+
+
 let arr = [2,3,4,3,3]
 let size = arr.length;
 let count = 1;
